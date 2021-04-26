@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;900&display=swap');
+
+:root {
+  --primaryLightColor: #d4e6a5;
+  --primaryColor: #476a2e;
+  --primaryDarkColor: #201e53c5;
+  --primaryFont: "Open Sans", sans-serif;
+  --slantedFont: "Solway", serif;
+  --secondFont:  'Noto Sans JP', sans-serif;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #f8f8f8;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainRed: #bd0303;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(12, 40, 63, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 0.25rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1200px;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: url(https://www.itl.cat/pngfile/big/0-3436_beautiful-sunset-beach-full-hd-nature-wallpaper-hd.jpg) no-repeat;
+  /* //background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; */
+  background-size: cover;
+  background-color: linear-gradient(45deg, rgb(61, 75, 121), rgb(58, 119, 138));
+
+}
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: var(--mainWhite);
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* filter: drop-shadow(8px 8px 10px green); */
+  /* filter: contrast(80%); */
+  filter: brightness(110%) contrast(130%);
+}
+.box h1{
+  font: var(--secondFont);
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+/* .ai {
+  display: inline-block;
+  position: absolute;
+} */
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+.copyright {
+	min-height: 80vh;
+	width: 100%;
+	padding: .5rem;
+  display: grid;
+	position: relative;
+	color: var(--offWhite);
+  font: var(--secondFont);
+  font-weight: 300;
+  font-size: 20px;
+  /* transform: translate(280%, 550%); */
+	bottom: 0;
+	text-align: center;
+  text-decoration: none;
+   flex-shrink: 0;
+}
+
+
+/* .copyright {
+  display: inline-block;
+	position: absolute;
+	color: var(--offWhite);
+  font: var(--primaryFont);
+  font-weight: 300;
+  font-size: 20px;
+  transform: translate(280%, 550%);
+	bottom: 0;
+	text-align: center;
+	height: 36px;
+  text-decoration: none;
+  text-emphasis: none;
+	/* width: 100%; *
+} */
+/* .copyright h4 {
+  text-align: center;
+}
+.site-footer
+{
+  height: 20vh;
+  background-color:#26272b;
+  padding:42px 0 20px;
+  display: flex;
+  flex-shrink: initial;
+  flex-direction: column;
+  position: relative;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+} */
+
+
+.footer-dark {
+  margin-top: 10px;
+  height: 50vh;
+  padding:20px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+  display: flex;
+  align-items: center;
+}
+.container{
+   margin: 32em 8em 1em 4em; 
+  align-content: center;
+
+}
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
